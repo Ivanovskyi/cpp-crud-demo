@@ -1,4 +1,4 @@
-# C++ Crow CRUD Demo with PostgreSQL
+# Demo C++ Crow CRUD Demo with PostgreSQL
 
 A minimalist, high-performance CRUD REST API built with the **Crow** microframework and **libpqxx** for PostgreSQL connectivity.
 
@@ -8,7 +8,7 @@ This project serves as an experimental playground for backend web development in
 
 ## Prerequisites
 
-- C++17 compatible compiler (e.g. `g++`)
+- C++ compatible compiler (e.g. `g++`)
 - PostgreSQL client libraries (`libpq` and `libpqxx`)
 - Docker Desktop (or Docker Engine)
 
@@ -57,9 +57,9 @@ The server initializes the database schema (if necessary) and starts listening o
 
 > **Note**
 >
-> This project intentionally does **not** implement a database connection pool in order to keep the example simple and focused on CRUD operations.
+> This project intentionally does **not** implement a database connection pool. The goal is to keep the demo version as simple, lightweight, and easy to understand as possible, focusing on the core CRUD functionality rather than production-level infrastructure.
 >
-> Opening a new PostgreSQL connection for every HTTP request is acceptable for a demonstration project but is **not recommended for production**. For high-concurrency workloads or performance benchmarking, consider implementing a thread-safe connection pool using `std::mutex` and `std::queue`.
+> If you would like to use this project as a foundation for a real-world application or perform high-concurrency benchmarking, you are encouraged to extend the demo by implementing your own thread-safe connection pool (for example, using `std::mutex` and `std::queue`) or by integrating another pooling solution.
 
 ---
 
